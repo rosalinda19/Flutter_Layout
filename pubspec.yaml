@@ -59,9 +59,26 @@ flutter:
 
   assets:
     - assets/image/submarin.jpg
+    - assets/image/kelenteng.jpg
+    - assets/image/pahlawan.jpg
+    - assets/image/sampoerna.jpg
+    - assets/image/sby.jpg
     - assets/image/monkasel_1.jpg
     - assets/image/monkasel_2.jpg
     - assets/image/monkasel_3.jpg
+    - assets/image/klenteng_1.jpg
+    - assets/image/kelenteng_2.jpg
+    - assets/image/kelenteng_3.jpg
+    - assets/image/pahlawan_1.jpg
+    - assets/image/pahlawan_2.jpg
+    - assets/image/pahlawan_3.jpg
+    - assets/image/sampoerna_1.jpg
+    - assets/image/sampoerna_2.jpg
+    - assets/image/sampoerna_3.jpg
+    - assets/image/sby_1.jpg
+    - assets/image/sby_2.jpg
+    - assets/image/sby_4.jpg
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

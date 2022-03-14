@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:prak3/model/tourism_place.dart';
 
 class DetailScreen extends StatelessWidget {
-  const DetailScreen({Key? key}) : super(key: key);
+  const DetailScreen({Key? key, required this.place}) : super(key: key);
 
+  final TourismPlace place;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: ListView(
-
           children: <Widget> [
-            Image.asset('assets/image/submarin.jpg',
-            ),
+            Image.asset(place.imageAsset),
             Container(
                 margin: EdgeInsets.only(left: 2.0),
                 child: Text(
-                  "Surabaya Submarine Monument",
+                  place.name,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Lobster',
                   ),
                 )
             ),
@@ -53,8 +53,8 @@ class DetailScreen extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(10.0),
-              child: const Text(
-                'Museum inside a decommissioned Russian war submarine with tours & an adjacent park with cafes. Clean and well maintained. Car park cost 10k, entrance fee 15k/person. You can see KRI Pasopati there, it is a russian whiskey class. You can also watch the video about the Indonesian Navy at the building beside the submarine.',
+              child: Text(
+                place.desc,
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 20.0),
               ),
@@ -66,20 +66,16 @@ class DetailScreen extends StatelessWidget {
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.all(12.0),
-                      child: Image.network(
-                          'https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a9/33/43/liburan-di-farmhouse.jpg'),
+                      child: Image.asset(
+                          place.image1),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(12.0),
-                      child: Image.asset('assets/image/monkasel_1.jpg'),
+                      child: Image.asset(place.image2),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(12.0),
-                      child: Image.asset('assets/image/monkasel_2.jpg'),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(12.0),
-                      child: Image.asset('assets/image/monkasel_3.jpg'),
+                      child: Image.asset(place.image3),
                     ),
                   ],
                 )

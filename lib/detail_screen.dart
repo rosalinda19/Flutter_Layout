@@ -19,11 +19,11 @@ class DetailScreen extends StatelessWidget {
                 child: Text(
                   place.name,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 30.0,
-                    fontFamily: 'Lobster',
+                    fontWeight: FontWeight.bold,
                   ),
-                )
+                ),
             ),
             Container(
               padding: const EdgeInsets.symmetric(vertical: 10.0),
